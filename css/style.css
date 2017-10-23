@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+}
+ul {
+    width: 210px; 
+    list-style: none; /* Para quitar los iconos de la lista */
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+}
+li {
+    background: #f5f5f0;
+}
+/* Estados de mi barra de menus, por especificidad y orden */
+a {
+    display: block; /* aplicara a los elementos en linea que se pongan en bloque */
+    text-decoration: none; /* quitara el efecto de cambiar de color al darle clic al link */
+    color: black;
+    padding-left: 15px;
+}
+a:hover { /* hara un cambio de estado cuando pase el mouse sobre el link */
+    background-color: #e0e0d1;
+}
+a:active { /* hara un cambio de estado cuando le de clic al link */
+    background-color: #333;
+    color: white;
+}
+ul li:first-child { /*Etiqueta li el primer hijo del padre ul*/
+    background: #f9a91a;
+}
+ul li:first-child a{
+    color: white;
+}
+ul li:first-child a:hover{
+    color: black;
+}
+ul li:first-child a:visited{
+    color: white;
+}
